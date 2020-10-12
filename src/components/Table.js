@@ -9,7 +9,7 @@ useEffect(() => {
 }, [])
 
 const loadUrls = async ()=>{
-    const result = await axios.get("http://localhost:3000/get");
+    const result = await axios.get("https://urlst-backend.herokuapp.com/get");
     setUrls(result.data.reverse());
     console.log(result.data);
 }
@@ -30,7 +30,7 @@ return(
                 <tr>
                 <td>{index+1}</td>
             <td><a href = {url.url}>{url.url}</a></td>
-            <td><a href = {`http://localhost:3000/get/${url.shorturl}`}>{url.shorturl}</a></td>
+            <td><a href = {`https://urlst-backend.herokuapp.com/get/${url.shorturl}`}>{url.shorturl}</a></td>
             <td>{url.clicks}</td>
             </tr>
             ))
