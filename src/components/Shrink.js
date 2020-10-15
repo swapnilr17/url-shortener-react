@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-
+import '../shrink.css';
 function Shrink() {
     
     const [posturls,setPosturls] = useState({
@@ -20,9 +20,9 @@ function Shrink() {
     }
   return (
     <div className="container">
-    <form className = "my-4 form-inline" onSubmit={e=>onSubmit(e)}>
-        <input required type="text" name="url" id="url" placeholder="URL" value={url} onChange={e=>onInputChange(e)} className="form-control col mr-2"/>
-        <button type="submit"  onClick={() => window.location.reload(false)} className="btn btn-success">Shrink</button>
+    <form className = "form my-4 form-inline shadow p-3 mb-5 rounded" onSubmit={e=>onSubmit(e)}>  
+    <input required type="text" name="url" id="url" placeholder="URL" value={url} onChange={e=>onInputChange(e)} className="form-control col mr-2"/>
+        <button type="submit"  onClick={() => window.location.reload(false)} className="btn btn-primary">Shrink</button>
     </form>
     
     </div>

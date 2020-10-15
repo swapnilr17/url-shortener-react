@@ -1,6 +1,7 @@
 import React, {useState , useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import '../table.css';
 
 function Table(){
 const [urls , setUrls] = useState([]);
@@ -14,7 +15,7 @@ const loadUrls = async ()=>{
 }
 return(
     <div className="container">
-<table className="table table-striped table-hover shadow p-3 mb-5 bg-white rounded table-responsive-sm">
+<table className="table table-striped table-hover shadow p-3 mb-5 rounded table-responsive-sm">
         <thead className="thead-dark">
             <tr>
                 <th>#</th>
