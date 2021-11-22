@@ -20,7 +20,7 @@ function Navbar() {
         <a className="nav-link h5" href="/">Home <span className="sr-only">(current)</span></a>
       </li>
       <li className="nav-item px-5">
-        <a className="nav-link h5" href="https://swapnilr17.netlify.app/">About<span className="sr-only"></span></a>
+        <a className="nav-link h5" href="https://swapnilr17.netlify.app/" target="_blank">About<span className="sr-only"></span></a>
       </li>
     </ul>
   </div>
